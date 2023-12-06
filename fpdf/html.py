@@ -509,7 +509,7 @@ class HTML2FPDF(HTMLParser):
             self._new_paragraph()
         if tag == "li":
             self._ln(2)
-            self.set_text_color(190, 0, 0)
+            #self.set_text_color(190, 0, 0)
             if self.bullet:
                 bullet = self.bullet[self.indent - 1]
             else:
